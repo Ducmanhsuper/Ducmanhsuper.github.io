@@ -4,6 +4,7 @@ import PerCentLanguage from "../PerCentLanguage/PerCentLanguage";
 import "../HomePage/HomePage.scss";
 import Education from "../Education/Education";
 import SocialNetwork from "../SocialNetwork/SocialNetwork";
+import PostProject from "../PostProject/PostProject";
 const HomePage = () => {
     return (
         <React.Fragment>
@@ -34,27 +35,38 @@ const HomePage = () => {
                     <div className="SkillWrapper">
                         <PerCentLanguage
                             lang={"HTML"}
-                            percent={"80%"}
+                            percent={"95%"}
                             colorPercent={"#dc0000"}
                         />
                         <PerCentLanguage
                             lang={"CSS"}
-                            percent={"62%"}
+                            percent={"65%"}
                             colorPercent={"#0058dc"}
                         />
 
                         <PerCentLanguage
                             lang={"JS"}
-                            percent={"70%"}
+                            percent={"72%"}
                             colorPercent={"#e8d610"}
                         />
                         <PerCentLanguage
                             lang={"REACTJS"}
-                            percent={"20%"}
+                            percent={"30%"}
                             colorPercent={"#10b2e8"}
                         />
-                    </div>
 
+                        <PerCentLanguage
+                            lang={"C++"}
+                            percent={"15%"}
+                            colorPercent={"rgb(83 32 206)"}
+                        />
+
+                        <PerCentLanguage
+                            lang={"JAVA"}
+                            percent={"1%"}
+                            colorPercent={"rgb(109 206 32)"}
+                        />
+                    </div>
 
 
 
@@ -76,6 +88,20 @@ const HomePage = () => {
                     />
 
                     <SocialNetwork />
+                </>
+
+
+                <>
+                    <ContentTitle
+                        title={
+                            "Project"
+                        }
+                    />
+
+                    <PostProject />
+
+
+
                 </>
 
 
